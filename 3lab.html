@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script type="text/javascript">
+  function digitalWatch() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if (hours < 10) hours = "0" + hours;
+    if (minutes < 10) minutes = "0" + minutes;
+    if (seconds < 10) seconds = "0" + seconds;
+    document.getElementById("digital_watch").innerHTML = hours + ":" + minutes + ":" + seconds;
+    setTimeout("digitalWatch()", 1000);
+  }
+</script>
+   <script type="text/javascript">
+  function go(addr) {
+    window.open(addr,"MyWin", "menubar=yes,width=1024,height=768");
+  }
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/3labStyle.css">
+    <title>Document</title>
+</head>
+<body onload="digitalWatch()">
+    <div class="header">
+        <ul>
+            <li><a href="1lab.html">1 лаба</a></li>
+            <li><a href="2lab.html">2 лаба</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="left">
+<table>
+    <tr>
+        <td rowspan="2"></td>
+        <td colspan="2">DPM с рапирой и без</td>
+    </tr>
+    <tr>
+        <td>без</td>
+        <td>с</td>
+    </tr>
+    <tr>
+        <td>ПУДЖ</td>
+        <td>урон</td>
+        <td>урон + 330</td>
+    </tr>
+    <tr>
+        <td>любой герой</td>
+        <td>урон</td>
+        <td>урон + 330</td>
+    </tr>
+</table>
+        <ul>
+        <li>Пудж</li>
+        <li>самый</li>
+        <li>сильный</li>
+        <li>герой</li>
+        </ul>
+        <ol>
+        <li>пудж</li>
+        <li>любимый</li>
+           <ul> 
+           <li>герой</li>
+           </ul>
+        <li>Айсфрога</li>
+        <p id="digital_watch" style="color: white; font-size: 120%; font-weight: bold;"></p>
+        </ol>
+        </div>
+        <div class="right">
+            <div class="multimedia">
+            <div class="vid"><iframe width="560" height="315" src="https://www.youtube.com/embed/G3P-0JOpn7U?start=2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="audo">
+                <audio src="audio/Pudge%20-%20%D0%AF%20%D0%BA%D0%B0%D0%BA%20%D1%88%D0%B0%D0%B2%D0%B5%D1%80%D0%BC%D0%B0%20-%20%D0%B5%D1%81%D0%BB%D0%B8%20%D0%BD%D0%B5%20%D0%BF%D0%BE%D0%B2%D0%B5%D0%B7%D0%BB%D0%BE,%20%D0%B1%D1%83%D0%B4%D0%B5%D1%88%D1%8C%20%D1%81%D1%82%D1%80%D0%B0%D0%B4%D0%B0%D1%82%D1%8C._(New-Music24.ru).mp3" controls></audio>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+                <a href = '' onclick="go('https://www.youtube.com/watch?v=12vh55_1ul8'); return false;">Кликните здесь</a>
+    </div>
+</body>
+</html>
